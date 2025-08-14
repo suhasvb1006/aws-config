@@ -4,3 +4,10 @@ spring:
     username: your_db_username
     password: your_db_password
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
